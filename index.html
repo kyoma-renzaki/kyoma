@@ -872,7 +872,7 @@
                 
                 <div class="info-item">
                     <i class="fas fa-heart" id="likeIcon" onclick="toggleLike()"></i> <span id="likeCount">1</span> | 
-                    <i class="fas fa-eye"></i> <span id="viewCount">100</span>
+                    <i class="fas fa-eye"></i> <span id="viewCount">10000</span>
                 </div>
                 <div class="info-item">
                     <i class="fas fa-map-marker-alt"></i> Hàm Ninh - Quảng Ninh - Quảng Bình
@@ -1105,7 +1105,7 @@
         // ==================== VIEW & LIKE COUNTER ====================
         function incrementViews() {
             const viewCountEl = document.getElementById('viewCount');
-            let currentViews = parseInt(localStorage.getItem('profileViews') || '100');
+            let currentViews = parseInt(localStorage.getItem('profileViews') || '10000');
             currentViews++;
             viewCountEl.textContent = currentViews;
             localStorage.setItem('profileViews', currentViews);
